@@ -34,7 +34,7 @@ Note that user directories must be under `/srv/sftpgo`
 Another note that the default URL will take you to the *client* login. For Admin login, go to http://localhost:8080/web/admin/login
 
 # Removal
-To remove it and all its data:
+To remove it and all of its data:
 
 > helm -n sftpgo uninstall sftpgo
 
