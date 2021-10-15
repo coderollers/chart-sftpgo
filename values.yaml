@@ -1,0 +1,29 @@
+debug: false
+image:
+  repository: ghcr.io/drakkan/sftpgo
+  pullPolicy: IfNotPresent
+  tag: ""
+
+imagePullSecrets: []
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+podSecurityContext:
+  fsGroup: 1000
+
+service:
+  type: LoadBalancer
+  port: 22
+
+storage:
+  size: 20Gi
+  storageClassName: default
+
+resources: 
+  limits:
+    cpu: 1000m
+    memory: 512Mi
+  requests:
+    cpu: 10m
+    memory: 64Mi
